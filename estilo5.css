@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1 {
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 40px;
+    color:#553d61;
+}
+.menu li {
+    display: inline-block; 
+    margin: 0 30px;
+}
+.menu a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #685757;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 60px;
+}
+.menu a:hover {
+    color: #007bff;
+}
+.socialmedia {
+    display: flex; 
+    list-style: none; 
+    padding: 0;
+    gap: 20px; 
+    margin-top: 50px;
+    justify-content: center;
+}
+.socialmedia a img {
+    width: 40px; 
+    height: auto;
+}
+
+.contenedor {
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenedor h2{
+    text-align: center;
+    font-size: 1.8em;
+    color: #1f2a44;
+    background-color: #1f2a44;
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.parrafos {
+    color: #333;
+    font-size: 1em;
+}
+.parrafos h3 { 
+    font-size: 1.4em;
+    color: #8b0000;
+    margin-bottom: 10px;
+}
+.grid-container{
+    display:grid;
+    border:1px solid grey;
+    grid-template-areas: "sup sup sup"
+                        "izq cen der"
+                        "inf inf inf";
+    grid-template-columns: 2fr 1fr 1fr;
+    gap:10px;
+}
+.grid-container div{
+    border:1px solid black;
+}
+/*Posicionamiento por areas*/
+.header{
+    background-color: aquamarine;
+    grid-area: sup;
+}
+.aside{
+    background-color: bisque;
+    grid-area: izq;
+}
+.article{
+    background-color:tomato;
+    grid-area: cen;
+}
+.article2{
+    background-color: chartreuse;
+    grid-area: der;
+}
+.footer{
+    background-color: beige;
+    grid-area: inf;
+}
